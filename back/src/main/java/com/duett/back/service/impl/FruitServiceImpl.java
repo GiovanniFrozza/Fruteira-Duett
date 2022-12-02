@@ -24,11 +24,11 @@ public class FruitServiceImpl implements FruitService {
         if(fruit.getDescricao() == null || fruit.getDescricao().trim().equals("")){
             throw new ErrorCreateFruitException("Informe uma descrição válida.");
         }
-        if(fruit.getValorA() < 0){
-            throw new ErrorCreateFruitException("O valor de A não pode ser menor que zero.");
+        if(fruit.getValorA() <= 0){
+            throw new ErrorCreateFruitException("O valor de A não pode ser igual nem menor que zero.");
         }
-        if(fruit.getValorB() < 0){
-            throw new ErrorCreateFruitException("O valor de B não pode ser menor que zero.");
+        if(fruit.getValorB() <= 0){
+            throw new ErrorCreateFruitException("O valor de B não pode ser igual nem menor que zero.");
         }
     }
 
