@@ -3,7 +3,7 @@ package com.duett.back.entity;
 import jakarta.persistence.*;
 
 @Entity
-public class FrutaEntity {
+public class FruitEntity {
     @Id
     @SequenceGenerator( name = "FRUTAS_SEQ", sequenceName = "FRUTAS_SEQ" )
     @GeneratedValue( generator = "FRUTAS_SEQ", strategy = GenerationType.SEQUENCE)
@@ -13,14 +13,14 @@ public class FrutaEntity {
     private double valorA;
     private double valorB;
 
-    public FrutaEntity(Integer id, String descricao, double valorA, double valorB) {
+    public FruitEntity(Integer id, String descricao, double valorA, double valorB) {
         this.id = id;
         this.descricao = descricao;
         this.valorA = valorA;
         this.valorB = valorB;
     }
 
-    public FrutaEntity() {
+    public FruitEntity() {
 
     }
 
