@@ -25,4 +25,7 @@ Java versão 17
 
 Spring boot versão 2.7.3
 
-Banco H2
+> Swagger: http://localhost:8080/
+
+> Banco h2: http://localhost:8080/h2
+
