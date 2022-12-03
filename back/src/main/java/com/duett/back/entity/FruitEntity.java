@@ -1,9 +1,10 @@
 package com.duett.back.entity;
 
-import jakarta.persistence.*;
+
 import lombok.*;
 
-import java.util.Collection;
+import javax.persistence.*;
+
 
 @Entity
 @Builder
@@ -17,6 +18,7 @@ public class FruitEntity {
     @GeneratedValue( generator = "FRUTAS_SEQ", strategy = GenerationType.SEQUENCE)
     public Integer id;
 
+    @Column(name = "descricao")
     private String descricao;
     private double valorA;
     private double valorB;
