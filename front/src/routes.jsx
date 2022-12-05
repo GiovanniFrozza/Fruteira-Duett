@@ -1,7 +1,6 @@
 import React from "react";
 import Frutas from "./pages/PaginaFrutas"
-import Teste from "./pages/Teste.jsx"
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
