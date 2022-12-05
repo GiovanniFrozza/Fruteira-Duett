@@ -18,6 +18,11 @@
 
 > npm install react-router-dom
 
+Para executar o front end basta digitar o seguinte comando
+
+>
+>npm start
+
 
 # Back end
 
